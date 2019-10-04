@@ -1,0 +1,147 @@
+/*All the styling for our website goes here. */
+/*The body element includes every element displayed on your page. */
+body {
+  margin: 0px; 
+  padding: 0px;
+  background-color: #333;  
+  
+  /*Text in the body element will default to this unless otherwise specified. */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;        
+}
+
+/*The header element runs along the top of our page.*/
+header {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 24px;                
+  background-color: #eee;        
+}
+header h1 {
+  margin: 0px;
+  padding: 0px;
+  
+  /*Text stylings*/
+  color: #333;
+  font-family: 'Vibes', cursive;
+}
+
+/*The aside includes our navigation links.*/
+aside {
+  float: right; /*Setting the float property to "right" positions this element to the right.*/
+  
+  margin-top: -24px; 
+  margin-right: 5%;
+  margin-bottom: 12px;
+  margin-left: 5%;
+  
+  padding: 4px;        
+  width: 35%;  
+  background-color: #ccc;
+  box-shadow: 4px 4px #aaa;
+  border-radius: 18px;
+
+  text-align: center;  
+}
+aside a {
+  display: block; 
+  padding: 4px;
+  margin: 4px;
+  color: #222;
+}
+
+/*Our website includes two sections: the bio/intro and projects.*/
+section {
+  margin: 12px;
+  padding-left: 24px;
+}                
+section h1 {
+  padding: 0px; 
+  margin: 0px;
+  margin-bottom: 36px;
+  background-color: #888;
+
+  /*Text stylings*/
+  font-family: 'Poppins', sans-serif;
+  color: #ddd;
+  font-size: 48px;
+  
+  /*Circle decoration*/
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 4px 4px #aaa;
+}
+section a {
+  color: #333;
+  text-decoration: none;
+}
+/*Stylings specific to the intro section.*/
+#intro {
+  width: 80%;        
+  padding: 12px;
+  
+  /*Text stylings*/
+  color: #fff;        
+}
+
+/*The project elements style each individual project.*/
+.project {          
+  width: 80%;
+  padding: 12px;
+  padding-left: 2%; 
+  overflow: hidden;       
+
+  margin: 16px;        
+  margin-left: 5%;    
+  margin-right: 5%;
+  
+  border-radius: 15px;
+  background-color: rgba(200, 200, 200, 0.9);
+  box-shadow: 4px 4px #aaa;
+
+  /*This styles the cursor when hovering over this element.*/
+  cursor: pointer;        
+}      
+/*This changes the elements transparency when hovered over by a mouse.*/
+.project:hover {
+  opacity: 0.8;
+}
+/*This styles all "h2" elements within our project elements. */
+.project h2 {
+  font-family: 'Vibes', cursive;
+  font-size: 36px;
+  margin: 0px; padding: 0px;
+
+}
+/*This styles all images inside our project elements.*/
+.project img {
+  width: 50%;         
+  float: right;
+  border-radius: 15px;
+  margin-left: 14px;
+}  
+/*These styles are only applied if the screen/window stretches beyond 800 pixels in width.*/
+@media only screen and (min-width: 800px) {
+  .project {
+    margin: 1%;    
+    width: 40%;
+    float: left;
+  }
+  .project img {
+    width:95%;    
+    padding: 2.5%;
+  }
+  footer {
+    float: left;
+  }
+}
+
+/*The footer element borders the site's bottom.*/
+footer {        
+  text-align: right;
+  background-color: #111;
+  color: #eee;
+  margin: 0px;
+  padding: 1%;
+  width: 98%;
+}

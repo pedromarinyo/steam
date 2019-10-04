@@ -1,95 +1,72 @@
 <!DOCTYPE html>
 <html>
   
+  <!-- The head element contains our title and links to our stylesheet, i.e., CSS, and google fonts.  -->
   <head>
+    <!-- Titling the webpage; this appears on browser tabs. -->
     <title>Pedro's STEAM Portfolio</title>   
 
-    <style>
-      body {
-        margin: 0px; 
-        padding: 0px;
-      }
-
-      header {
-        color: #eee;
-        background-color: #333;
-        padding: 8px;
-        font-family: Helvetica;
-      }
-
-      aside {
-        float: right;
-        border: 0px;
-        right: 0px;
-        margin: 1%;
-        padding: :0px;
-        width: 28%;
-      }
-
-      .projectPreview {
-        float: left;
-        border: 0px;
-        width: 68%;
-        margin: 1%;
-        padding: 0px;
-      }
-
-      footer {
-        float: left;
-        text-align: right;
-        background-color: #111;
-        color: #eee;
-        margin: 0px;
-        padding: 1%;
-        width: 98%;
-      }
-    </style>
-
-
+    <!-- Loading stylessheet from style.css -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- Getting 'Mansalva' font from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vibes&display=swap" rel="stylesheet">
   </head>
   
   <body>
 
+    <!-- The banner that runs along the top border. Edit the element below to title your portfolio website. -->
     <header>
-      <h1>Pedro Silva, <i>STEAM Workshop</i></h1>
-      <h2>Science Technology Engineering Art & Mathamatics</h2> 
+      <h1>Pedro Silva, <i>STEAM Workshop</i></h1>      
     </header>
 
+    <!-- The navigation box that lines the right border; edit this element to adjust your navigation. -->
     <aside>
-      <a href="#p1">Section 1</a><br>
-      <a href="#p2">Section 1</a><br>
-      <a href="#p3">Section 1</a><br>
-      <a href="#p4">Section 1</a><br>
+      <a href="#p1">Augmented Reality Business Card</a>    
+      <a href="#p2">Project 1</a>
+      <a href="#p3">Project 2</a>                   
     </aside>
 
-    <section class="projectPreview" id="p1">
-      <h1>Project Title</h1>
-      <h3>Project Description:</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    </section>    
+    <!-- A small bio section that serves as an introduction. What are your artistic goals/interest/missions? How do the projects you have on display reflect those goals? -->
+    <section id="intro">
+      <h1>Hello</h1>   
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/e6KzjUOfmBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+      <p>My work includes second screen apps for orienting viewers in complex TV storyworlds, and AI-driven interactive fiction and games.</p> 
+      <p>My academic research explores techniques for authoring interactive narratives. I’ve studied narrative game design as part of the Digital Media PhD program at the Georgia Institute of Technology, where I worked as lab manager for the Experimental TV Lab.</p>
+    </section>
 
-    <section class="projectPreview" id="p2">
-      <h1>Project Title</h1>
-      <h3>Project Description:</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-    </section>    
+    <!-- The project section -->
+    <!-- Each project is an article element; edit below to reflect your own projects. -->
+    <section>
+      <h1>Projects</h1>
 
-    <section class="projectPreview" id="p3">
-      <h1>Project Title</h1>
-      <h3>Project Description:</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    </section>    
+      <!-- Project 1, Augmented Reality Business Card -->
+      <a href="https://pedromarinyo.github.io/arCard/"><article class="project" id="p1">
+        <h2>Augmented Reality Business Card</h2>
+        <img src="assets/ar.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </article>  </a>
 
-    <section class="projectPreview" id="p4">
-      <h1>Project Title</h1>
-      <h3>Project Description:</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    </section>     
+      <!-- Past Project 1 -->
+      <article class="project" id="p2">      
+        <h2>Past Project 1</h2>        
+        <img src="assets/art1.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>        
+      </article>    
 
+      <!-- Past Project 2 -->
+      <article class="project" id="p3">        
+        <h2>Past Project 2</h2>
+        <img src="assets/art2.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </article>    
+    </section>  
+
+    <!-- The footer section; give yourself some credit! -->
     <footer>
       <p>This website is designed and programmed by Pedro Silva.</p>
     </footer>   
   
   </body>
-
 </html>
