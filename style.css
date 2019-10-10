@@ -25,6 +25,12 @@ header h1 {
   font-family: 'Vibes', cursive;
 }
 
+#intro a {
+  color: white;
+  display: block;
+  text-decoration: underline;
+}
+
 /*The aside includes our navigation links.*/
 aside {
   float: right; /*Setting the float property to "right" positions this element to the right.*/
@@ -73,8 +79,9 @@ section h1 {
 }
 section a {
   color: #333;
-  text-decoration: none;
+  text-decoration: none;  
 }
+
 /*Stylings specific to the intro section.*/
 #intro {
   width: 80%;        
@@ -120,21 +127,6 @@ section a {
   border-radius: 15px;
   margin-left: 14px;
 }  
-/*These styles are only applied if the screen/window stretches beyond 800 pixels in width.*/
-@media only screen and (min-width: 800px) {
-  .project {
-    margin: 1%;    
-    width: 40%;
-    float: left;
-  }
-  .project img {
-    width:95%;    
-    padding: 2.5%;
-  }
-  footer {
-    float: left;
-  }
-}
 
 /*The footer element borders the site's bottom.*/
 footer {        
