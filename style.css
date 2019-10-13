@@ -1,5 +1,6 @@
 /*All the styling for our website goes here. */
 /*The body element includes every element displayed on your page. */
+/*_______________________________________*/
 body {
   margin: 0px; 
   padding: 0px;
@@ -9,12 +10,14 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;        
 }
 
+/*HEADER*/
 /*The header element runs along the top of our page.*/
+/*_______________________________________*/
 header {
+  width: 96%;
   margin: 0px;
-  padding: 0px;
-  padding-left: 24px;                
-  background-color: #eee;        
+  padding: 2%;  
+  background-color: #E0DDCF;        
 }
 header h1 {
   margin: 0px;
@@ -23,15 +26,12 @@ header h1 {
   /*Text stylings*/
   color: #333;
   font-family: 'Vibes', cursive;
+  font-size: 36px;
 }
 
-#intro a {
-  color: white;
-  display: block;
-  text-decoration: underline;
-}
-
+/*ASIDE*/
 /*The aside includes our navigation links.*/
+/*_______________________________________*/
 aside {
   float: right; /*Setting the float property to "right" positions this element to the right.*/
   
@@ -42,8 +42,8 @@ aside {
   
   padding: 4px;        
   width: 35%;  
-  background-color: #ccc;
-  box-shadow: 4px 4px #aaa;
+  background-color: #3C7A89;
+  box-shadow: 4px 4px #333;
   border-radius: 18px;
 
   text-align: center;  
@@ -52,59 +52,69 @@ aside a {
   display: block; 
   padding: 4px;
   margin: 4px;
-  color: #222;
+  color: #ccc;
 }
 
+/*SECTIONS*/
 /*Our website includes two sections: the bio/intro and projects.*/
+/*_______________________________________*/
 section {
-  margin: 12px;
-  padding-left: 24px;
+  width:96%;
+  margin: 0px;
+  padding: 2%;
+  color: #ccc;
 }                
 section h1 {
   padding: 0px; 
   margin: 0px;
-  margin-bottom: 36px;
-  background-color: #888;
+  margin-top: 12px;
 
   /*Text stylings*/
   font-family: 'Poppins', sans-serif;
-  color: #ddd;
-  font-size: 48px;
-  
-  /*Circle decoration*/
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  box-shadow: 4px 4px #aaa;
+  color: #fff;
+  font-size: 36px;
 }
 section a {
   color: #333;
   text-decoration: none;  
 }
 
+/*INTRO SECTION*/
 /*Stylings specific to the intro section.*/
+/*_______________________________________*/
 #intro {
-  width: 80%;        
-  padding: 12px;
   
-  /*Text stylings*/
-  color: #fff;        
+  background-color: #474448;
+}
+
+#intro li {
+  padding-bottom: 6px;  
+}
+#intro a {
+  color: white;
+  display: block;
+  text-decoration: underline;
+}
+
+/*PROJECT SECTION and PROJECTS*/
+/*The projects element styles the whole projects section.*/
+#projects {
+  background-color: #2E4756;
+  float: left;
 }
 
 /*The project elements style each individual project.*/
 .project {          
-  width: 80%;
-  padding: 12px;
-  padding-left: 2%; 
-  overflow: hidden;       
-
-  margin: 16px;        
-  margin-left: 5%;    
-  margin-right: 5%;
+  width: 40%;
+  height: 200px;
+  padding: 4%;
+  margin: 1%;        
+  overflow: hidden; 
+  float: left;
   
   border-radius: 15px;
   background-color: rgba(200, 200, 200, 0.9);
-  box-shadow: 4px 4px #aaa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   /*This styles the cursor when hovering over this element.*/
   cursor: pointer;        
@@ -115,8 +125,8 @@ section a {
 }
 /*This styles all "h2" elements within our project elements. */
 .project h2 {
-  font-family: 'Vibes', cursive;
-  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
   margin: 0px; padding: 0px;
 
 }
@@ -128,13 +138,15 @@ section a {
   margin-left: 14px;
 }  
 
-
+/*FOOTER*/
 /*The footer element borders the site's bottom.*/
 footer {        
   text-align: right;
-  background-color: #111;
+  float: left;
+  background-color: #0E1116;
   color: #eee;
-  margin: 0px;
-  padding: 1%;
-  width: 98%;
+  
+  width: 96%;
+  margin: 0px;  
+  padding: 2%;  
 }
