@@ -132,7 +132,7 @@ section a {
 }
 /*This styles all images inside our project elements.*/
 .project img {
-  width: 50%;         
+  width: 45%;         
   float: right;
   border-radius: 15px;
   margin-left: 14px;
