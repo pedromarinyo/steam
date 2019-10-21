@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <!-- The head element contains our title and links to our stylesheet, i.e., CSS, and google fonts.  -->
+  <head>
+    <!-- Titling the webpage; this appears on browser tabs. -->
+    <title>Fortune Teller 3000</title>   
+    
+    <!-- Linking CSS stylesheet. -->
+    <link href="style.css" rel="stylesheet">    
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>Fortune Teller 3000</h1>
+      <img src="fortune.jpeg" width="50%">
+    </header>
+
+    <!-- This section holds the question. -->
+    <section id="questions">
+      
+      <h3>What is your name, good sir/madam?</h3>        
+      <!-- "Input" allows us to get input from the user. -->
+      <input id="name" type="text" value="">            
+      <h3>What is your age?</h3>  
+      <input id="age" type="text" value="">     
+
+      <h3>What is your favorite movie?</h3>  
+      <input id="movie" type="text" value="">     
+
+      <h3>What is your favorite hobby?</h3> 
+      <p>("-ing" verb, i.e., infinitive)</p>  
+      <input id="hobby" type="text" value="">     
+
+      <!-- "onClick" specifies which function to run when the button is clicked. -->
+      <p id="button">
+        <input type="button" onClick="readFortune()" value="Read Fortune">
+      </p>
+    </section>
+
+    <!-- This is where we display the answer; at the start, it contains nothing. -->
+    <section id="fortuneDisplay">
+    </section>
+  
+  </body>
+
+  <!-- This is where we link our "script.js" file to our html. -->
+  <script src="script.js" type="text/javascript"></script>
+   
+</html>
+
