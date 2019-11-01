@@ -88,6 +88,8 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 
+// ______________________________________________________________
+
 int melody[] = {
   NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
 };
@@ -96,6 +98,8 @@ int melody[] = {
 int noteDurations[] = {
   4, 8, 8, 4, 4, 4, 4, 4
 };
+
+// ______________________________________________________________
 
 void setup() {
   // iterate over the notes of the melody:
