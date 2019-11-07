@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>    
+  
+    <title>Random Movie Tagline Generator</title>   
+
+    <!-- Getting fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous&display=swap" rel="stylesheet">
+  
+
+    <!-- Style -->
+    <style type="text/css">
+      
+      body {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+      }
+
+
+      h3 {
+        font-family: "Pacifico";
+        font-size: 24pt;
+      }
+
+      #display {
+        width:  80%;
+        padding: 5%;
+        margin: 5%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 22pt; 
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+  
+    <div id="display"></div>
+
+
+    <script type="text/javascript">
+      
+      var display = document.getElementById("display");
+
+      var protagonistProfession; 
+      var antagonistProfession;
+      var treasure;
+      var setting;
+      var genre;
+      var era;
+
+      var tagline;
+      
+      var professions = ["Hallmark Greeting Card  Writing Consultant", "K-Pop Music Video Producer", "President of Idyllwild Arts Academy", "Dolphin Trainer", "Stunt Car Driver", "Gardener"];
+      
+      var treasures = ["land a good-paying job", "attain inner-peace", "be the best in their profession", "to pass on their knowledge"];      
+      
+      var settings = ["The Moon", "The World's Fair", "Beijing", "Idyllwild", "A Parisean Cafe", "Allen's Office"];
+      var eras = ["Ancient times", "The present day", "The far future"];
+      var genres = ["Mystery", "Science Fiction", "Horror", "Romance", "Action", "Buddy-Cop Comedy", "Sports"];
+
+      // Choosing a random profession for the protagonist.
+      var i = Math.floor(Math.random() * professions.length);
+      protagonistProfession = professions[i];
+
+      // Choosing a random profession for the antagonist.
+      i = Math.floor(Math.random() * professions.length);
+      antagonistProfession = professions[i];
+
+      // Choosing a random treasure for the protagonist to pursue.
+      i = Math.floor(Math.random() * treasures.length);
+      treasure = treasures[i];
+
+      // Choosing a random setting.
+      i = Math.floor(Math.random() * settings.length);
+      setting = settings[i];      
+
+      // Choosing a random genre.
+      i = Math.floor(Math.random() * genres.length);
+      genre = genres[i];  
+
+      // Choosing a random era.   
+      i = Math.floor(Math.random() * eras.length);
+      era = eras[i];  
+
+      // Stitching together a movie tagline.
+      tagline = "<h3>The Time?<br>" + era + ".</h3> <h3>The Place?<br>" + setting + ".</h3> <br><br> <p>Your protagonist, a " + protagonistProfession + ", seeks to " + treasure + " despite the efforts of your antagonist, a " + antagonistProfession + ". </p>";
+
+      console.log(tagline);
+      display.innerHTML = tagline;
+
+
+    </script>
+
+  </body>
+
+</html>

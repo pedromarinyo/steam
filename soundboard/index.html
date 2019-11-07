@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>    
+  
+    <title>Soundboard</title>   
+
+    <!-- Styling -->
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;        
+        text-align: center;
+        background-color: #eee;        
+      }
+      
+      #canvasContainer {
+        margin: 0px;
+        padding: 0px;        
+        background-color: #333;
+        display: inline-block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+      }
+
+      canvas {
+        margin: 0px;
+        padding: 0px;        
+      }
+    </style>
+
+    <!-- Getting "Fabric.js" and "Tone.js" -->
+    <script type="text/javascript" src="libraries/fabric.min.js"></script>
+    <script type="text/javascript" src="libraries/Tone.js"></script>  
+
+    <!-- Getting fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body>
+  
+    <!-- Canvas utilized by Fabric.js -->
+    <div id="canvasContainer">
+      <canvas id="c" width="1024" height="768"></canvas>
+    </div>
+
+    <!-- Custom functions -->
+    <script type="text/javascript" src="script.js"></script>
+    
+    <!-- Soundboard layout -->
+    <script type="text/javascript" src="layout.js"></script>  
+
+  </body>
+
+</html>
